@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity2">
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_begin="125dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_begin="364dp"/>
+
+
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이용 약관 동의"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#252525"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal|top"/>
+
+    <TextView
+        android:id="@+id/agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="이용 약관에\n동의해주세요"
+        android:textColor="@color/main_1"
+
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        tools:context=".MainActivity2">
+
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@drawable/ic_check"
+        android:checked="false"
+
+        android:paddingStart="10dp"
+        android:text="모든 이용 약관에 동의합니다"
+        android:textColor="@color/black"
+
+        android:textSize="20sp"
+         />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="21dp"
+            android:background="@color/grayscale2"/>
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/ic_check"
+        android:checked="false"
+
+        android:paddingStart="10dp"
+        android:layout_marginBottom="24dp"
+        android:text="서비스 및 해외 비대면 진료 이용약관 동의"
+        android:layout_marginTop="21dp"
+
+        android:textColor="@color/black"
+        android:textSize="15sp"
+         />
+
+
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/ic_check"
+        android:checked="false"
+
+        android:paddingStart="10dp"
+        android:layout_marginBottom="24dp"
+        android:text="개인정보 수집 및 취급 동의"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+         />
+    <CheckBox
+        android:id="@+id/checkbox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/ic_check"
+        android:checked="false"
+
+        android:paddingStart="10dp"
+        android:layout_marginBottom="24dp"
+        android:text="건강정보(민감정보) 수집 및 이용 동의"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+         />
+    <CheckBox
+        android:id="@+id/checkbox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/ic_check"
+        android:checked="false"
+
+        android:paddingStart="10dp"
+        android:layout_marginBottom="24dp"
+        android:text="건강정보(민감정보) 수집 및 이용 동의"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+         />
+
+        <CheckBox
+            android:id="@+id/checkbox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/ic_check"
+            android:checked="false"
+
+            android:paddingStart="10dp"
+
+            android:layout_marginBottom="24dp"
+            android:text="마케팅 정보 수신 동의"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+             />
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="12dp"
+
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_next"
+
+        android:text="동의 후 계속"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--<ImageView-->
+<!--android:layout_width="50dp"-->
+<!--android:layout_height="50dp"-->
+<!--android:scaleType="centerInside"-->
+<!--app:layout_constraintStart_toEndOf="@id/checkbox"-->
+<!--app:layout_constraintTop_toTopOf="parent"-->
+<!--app:layout_constraintBottom_toBottomOf="parent"-->
+<!--    />-->
+
+<!--<Button-->
+<!--android:id="@+id/btnNext"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="48dp"-->
+<!--android:layout_marginBottom="12dp"-->
+<!--android:button="@drawable/rectangular_style1"-->
+<!--android:checked="false"-->
+
+<!--android:text="동의 후 계속"-->
+<!--android:textSize="18dp"-->
+<!--android:textColor="@color/white"-->
+
+<!--app:layout_constraintBottom_toBottomOf="parent"-->
+<!--app:layout_constraintStart_toStartOf="parent"-->
+<!--app:layout_constraintEnd_toEndOf="parent"/>-->
+
+<!--    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--    app:layout_constraintEnd_toEndOf="parent"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    app:layout_constraintTop_toTopOf="parent"-->
+<!--    app:layout_constraintVertical_bias="0.288"-->
+
+<!--    app:layout_constraintHorizontal_bias="0.0"-->
+<!--    app:layout_constraintEnd_toEndOf="parent"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    app:layout_constraintTop_toBottomOf="@id/checkbox"-->
+
+<!--    app:layout_constraintHorizontal_bias="0.0"-->
+<!--    app:layout_constraintEnd_toEndOf="parent"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    app:layout_constraintTop_toBottomOf="@id/checkbox1"-->
+
+<!--    app:layout_constraintHorizontal_bias="0.0"-->
+<!--    app:layout_constraintEnd_toEndOf="parent"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    app:layout_constraintTop_toBottomOf="@id/checkbox2"-->
+
+<!--    app:layout_constraintHorizontal_bias="0.0"-->
+<!--    app:layout_constraintEnd_toEndOf="parent"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    app:layout_constraintTop_toBottomOf="@id/checkbox3"-->
+
+<!--    app:layout_constraintEnd_toEndOf="parent"-->
+<!--    app:layout_constraintHorizontal_bias="0.0"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    app:layout_constraintTop_toBottomOf="@id/checkbox4"-->
