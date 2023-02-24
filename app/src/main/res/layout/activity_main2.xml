@@ -170,6 +170,7 @@
 
         android:layout_marginTop="50dp"
         android:background="@drawable/ic_next"
+        android:enabled="false"
 
         android:text="동의 후 계속"
         android:textSize="18dp"

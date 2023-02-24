@@ -2,13 +2,14 @@
 <selector
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item
-        android:state_selected="true"
-        android:drawable="@drawable/rectangular_style" />
+    <!-- 버튼의 selector 는 state_enabled 속성만 지정하면 됩니다.-->
 
-    <item
-        android:state_selected="false"
-        android:drawable="@drawable/rectangular_style1" />
+    <!-- state_selected : 리스트 화면에서 항목을 선택했을 때
+                        또는 view UI 중에 select 속성이 있을 때사용하는 속성  -->
+    <!-- state_focused : 뷰의 포커스 (예를 들면 에디트텍스트에 커서가 있는 상태)
+                        속성에서 사용 -->
+    <!-- state_pressed : 버튼이나 ui가 눌러 있는 상태 여부에 따른 속성 -->
+    <!-- state_checked : 체크박스나 라디오버튼 처럼 체크 속성이 있는 UI 에 사용-->
 
     <item
         android:state_enabled="true"
