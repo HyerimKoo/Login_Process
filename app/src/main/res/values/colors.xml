@@ -11,6 +11,7 @@
     <color name="grayscale2">#E9EDF3 </color>
     <color name="grayscale3">#CBD2DF </color>
     <color name="grayscale4">#7E8695 </color>
-
+    <color name="bg_blue">#EAF0FF </color>
+    <color name="sub_red">#FF4F64 </color>
 
 </resources>

@@ -7,7 +7,12 @@
     android:layout_height="match_parent"
     android:paddingHorizontal="16dp"
     android:paddingBottom="16dp"
-    tools:context=".MainActivity3">
+    tools:context=".MainActivity4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ScrollView>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -75,19 +80,22 @@
             android:textColor="@color/main_1"
             android:textSize="16sp" />
 
-        <Spinner
-            android:id="@+id/countrySpinner"
+        <EditText
+            android:id="@+id/etcountry"
             android:layout_width="match_parent"
-            android:layout_height="34dp"
-            android:allowClickWhenDisabled="true"/>
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:enabled="false"
+            android:textColor="@color/black"/>
 
         <EditText
             android:id="@+id/etPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""
-            android:textColor="@color/grayscale3"
-            android:textSize="16dp" />
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:enabled="false"/>
 
         <TextView
             android:id="@+id/CertiNum"
@@ -101,7 +109,7 @@
             android:id="@+id/etCertiNum"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="인증번호를 입력해주세요."
+            android:hint="인증번호를 입력해주세요."
             android:textColor="@color/grayscale3"
             android:textSize="16sp" />
 
@@ -112,7 +120,7 @@
         android:id="@+id/txt1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="142dp"
         android:gravity="top"
@@ -149,7 +157,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txt1"
-        app:layout_constraintVertical_bias="0.156" />
+        app:layout_constraintVertical_bias="0.156"
+        android:layout_marginBottom="10dp"/>
 
 
 

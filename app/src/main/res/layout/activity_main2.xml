@@ -9,7 +9,10 @@
     android:paddingBottom="16dp"
     tools:context=".MainActivity2">
 
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ScrollView>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -96,7 +99,7 @@
 
         android:paddingStart="10dp"
         android:layout_marginBottom="24dp"
-        android:text="서비스 및 해외 비대면 진료 이용약관 동의"
+        android:text="서비스 및 해외 비대면 진료 이용약관 동의 (필수)"
         android:layout_marginTop="21dp"
 
         android:textColor="@color/black"
@@ -113,7 +116,7 @@
 
         android:paddingStart="10dp"
         android:layout_marginBottom="24dp"
-        android:text="개인정보 수집 및 취급 동의"
+        android:text="개인정보 수집 및 취급 동의 (필수)"
         android:textColor="@color/black"
         android:textSize="15sp"
          />
@@ -126,7 +129,7 @@
 
         android:paddingStart="10dp"
         android:layout_marginBottom="24dp"
-        android:text="건강정보(민감정보) 수집 및 이용 동의"
+        android:text="건강정보(민감정보) 수집 및 이용 동의 (필수)"
         android:textColor="@color/black"
         android:textSize="15sp"
          />
@@ -139,7 +142,7 @@
 
         android:paddingStart="10dp"
         android:layout_marginBottom="24dp"
-        android:text="건강정보(민감정보) 수집 및 이용 동의"
+        android:text="건강정보(민감정보) 제 3자 제공 동의 (필수)"
         android:textColor="@color/black"
         android:textSize="15sp"
          />
@@ -154,7 +157,7 @@
             android:paddingStart="10dp"
 
             android:layout_marginBottom="24dp"
-            android:text="마케팅 정보 수신 동의"
+            android:text="마케팅 정보 수신 동의 (선택)"
             android:textColor="@color/black"
             android:textSize="15sp"
              />
