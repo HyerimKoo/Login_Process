@@ -33,9 +33,6 @@ class MainActivity6 : AppCompatActivity() {
         //스피너에 들어갈 데이터
         val gender = arrayOf("남성", "여성")
 
-        //스피너 객체 생성
-        //binding.genderSpinner
-        //val countrySpinner: Spinner = findViewById(R.id.countrySpinner)
 
         //어댑터 생성
         val adapter: ArrayAdapter<String> = ArrayAdapter(
@@ -43,7 +40,7 @@ class MainActivity6 : AppCompatActivity() {
             android.R.layout.simple_list_item_1, gender
         )
 
-        //어댑터 설정
+        //어댑터 설정 cf. android.R은 시스템상 원래있는 리소스를 뜻한다고함
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
         //스피너에 어댑터 적용

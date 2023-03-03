@@ -9,10 +9,6 @@
     android:paddingBottom="16dp"
     tools:context=".MainActivity3">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </ScrollView>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
